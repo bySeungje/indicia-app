@@ -20,7 +20,7 @@
 1. Pleos Connect 에뮬레이터(v2.1.0)를 켠다.
 2. APK 를 설치한다. 에뮬레이터 앱은 사용자 10 으로 돈다.
    ```
-   adb install -r apk/인디시아_release.apk
+   adb install -r apk/지승제_인디시아_release.apk
    adb shell pm grant --user 10 app.chajeung android.car.permission.CAR_SPEED
    adb shell appops set --user 10 app.chajeung SYSTEM_ALERT_WINDOW allow
    adb shell am start --user 10 -n app.chajeung/.MainActivity
@@ -29,13 +29,13 @@
 
 ## 테스트 환경
 
-- Pleos Connect Emulator v2.1.0 (Android 14 Automotive), macOS
+- Pleos Connect Emulator v2.1.0 (Android 14 Automotive), 화면 규격 2560 x 1440, 밀도 160dpi, macOS
 - Android Gradle Plugin 8.11.1, Kotlin 2.2.20, compileSdk 35, minSdk 28
 - 차량 값: Pleos Vehicle SDK(창문, 와이퍼, 좌석, 공조, 배터리, 브레이크, 계기판 거리, 방향지시등), 표준 Car API(속도, 기어), Pleos NaviHelper(경로)
 
 ## 파일 위치
 
-- APK: `apk/인디시아_release.apk`
+- APK: `apk/지승제_인디시아_release.apk`
 - 소스 코드: `app/`
 
 ## 빌드
